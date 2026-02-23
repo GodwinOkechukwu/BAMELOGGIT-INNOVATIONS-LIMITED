@@ -131,7 +131,7 @@ const AllCategorySection = () => {
     <>
       {/* Hero Concept inspired by the image */}
       <div className="relative w-full overflow-hidden">
-        <div className=" mt-[100px] md:mt-[200px] px-8  w-full space-y-6">
+        <div className=" mt-[100px] md:mt-[200px] px-4 w-full space-y-6">
           <article className="w-[80%] pt-10 md:max-w-[800px] m-auto text-center mb-40 ">
             <h1 className="text-[#0C0B15] text-3xl md:text-6xl font-bold">
               Sophisticated Accessories <br /> For Your Computer
@@ -154,7 +154,7 @@ const AllCategorySection = () => {
               alt="img1"
             />
             <Picture
-              className="md:h-[550px] md:w-[727px] relative md:bottom-[100px] md:right-[100px]"
+              className="md:h-[550px] md:w-[727px] relative md:bottom-[100px] md:right-[85px]"
               src={img1}
               alt="img2"
             />
@@ -195,7 +195,7 @@ const AllCategorySection = () => {
           </div>
         </article>
 
-        <div className="flex flex-col  gap-5 md:flex-row  md:justify-between px-8 mt-10 w-full justify-end">
+        <div className="grid md:grid-cols-3 gap-5 mt-10 w-full ">
           <div className="m-auto w-[95%] md:w-[388px] pb-5 border border-[#D4D2E3] rounded-2xl">
             <Picture className="w-full h-[338px]" src={img5} alt="img5" />
             <article className="w-[90%] m-auto mt-5">
