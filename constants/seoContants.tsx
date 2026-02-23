@@ -3,7 +3,7 @@ import { Metadata } from "next";
 // 1. Core Configuration Constants
 export const SITE_NAME = "BAMELOGGIT INNOVATIONS LIMITED";
 export const SITE_URL =
-	process.env.NEXT_PUBLIC_SITE_URL || "https://nestora.digital"; // Update with actual URL
+	process.env.NEXT_PUBLIC_SITE_URL || "https://bameloggit"; // Update with actual URL
 export const TWITTER_HANDLE = "@NestoraDigital";
 
 interface SEOConfig {
