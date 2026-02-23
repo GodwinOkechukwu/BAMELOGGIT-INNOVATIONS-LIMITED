@@ -113,17 +113,18 @@ const Header = () => {
       href: "/user/my-orders",
       label: "About",
     },
-    { id: 3, href: "", label: "Resources" },
     { id: 4, href: "", label: "Contact" },
   ];
   return (
     <>
-      <header className="flex flex-col w-full bg-[#fff] z-[100] fixed top-0 border-b border-white/5 shadow-2xl transition-all">
-        <div className="md:flex justify-between pt-[20px] px-[20px] hidden">
-          <div className="pl-[10%] items-center mt-3">
-            <h1 className="text-4xl font-bold">LOGO</h1>
-          </div>
-          <ul className="flex justify-between w-[60%] py-5 pr-[12%]">
+      <header className="flex flex-col w-full bg-[#fff] z-[100] px-3 fixed top-0 border-b border-white/5 shadow-2xl transition-all">
+        {/* Desktop Header */}
+        <div className="hidden slg:flex items-center justify-between w-full py-3 max-w-[1440px] mx-auto">
+          {/* <div className="md:flex w-[50%] bg-black justify-between hidden"> */}
+          
+        
+          <ul className="md:flex justify-between w-[40%]  py-5 ">
+            <h1 className="text-2xl items-center mt-[-5px] font-bold">LOGO</h1>
             {navLinks.map((l) => {
               return (
                 <li className="text-[#241E1E] list-none text-[16px]">
@@ -131,20 +132,19 @@ const Header = () => {
                 </li>
               );
             })}
-            <button className="border hover:opacity-[0.8] text-[#241E1E] border-[#D4D2E3] rounded-2xl px-4 py-2 mt-[-10px]" >Login</button>
-            <button className="border hover:opacity-[0.8] text-[#fff] border-[#A9BE66] w-fit bg-[#A9BE66] rounded-2xl px-4 py-2 mt-[-10px]">Get Started</button>
+            {/* <button className="border hover:opacity-[0.8] text-[#241E1E] border-[#D4D2E3] rounded-2xl px-4 py-2 mt-[-10px]" >Login</button> */}
+            <button className="border hover:opacity-[0.8] text-[#fff] border-[#A9BE66] w-fit bg-[#A9BE66] rounded-2xl px-4 py-2 mt-[-10px]">
+              Get Started
+            </button>
           </ul>
-        </div>
-
-        {/* Desktop Header */}
-        <div className="hidden slg:grid grid-cols-10 items-center justify-between w-full py-3 max-w-[1440px] px-8 mx-auto">
+          {/* </div> */}
           {/* 1. Logo */}
           <div className="col-span-2">
             <LogoImage className="!w-[35px] cursor-pointer brightness-200" />
           </div>
 
           {/* 2. Search Bar */}
-          <div className="col-span-6 flex justify-center px-12">
+          <div className="col-span-6 flex justify-center w-[550px] px-12">
             <div className="relative w-full max-w-[550px] group">
               <FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-blue-500 transition-colors" />
               <input
@@ -348,8 +348,8 @@ const Header = () => {
         ) : pathname.includes("/home-item") ? (
           <ProductPageBottomHeader />
         ) : (
-        //   <HomePageBottomHeader />
-		""
+          //   <HomePageBottomHeader />
+          ""
         )}
       </header>
 
