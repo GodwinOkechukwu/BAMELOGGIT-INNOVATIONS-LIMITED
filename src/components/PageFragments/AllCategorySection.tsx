@@ -147,7 +147,7 @@ const AllCategorySection = () => {
               Get Started <FaArrowRight />
             </button>
           </article>
-          <div className="flex flex-col md:flex-row mt-20 w-full">
+          <div className="flex flex-col gap-5 md:flex-row mt-20 w-full">
             <Picture
               className="md:h-[550px] relative md:w-[727px]"
               src={img2}
@@ -186,7 +186,7 @@ const AllCategorySection = () => {
           );
         })} */}
         <article className="text-center w-[60%] m-auto">
-          <h1 className="text-3xl md:text-5xl fomt-bold">Our Services</h1>
+          <h1 className="text-3xl md:text-5xl fomt-bold">Our Services </h1>
           <div className="md:w-[60%] m-auto pt-7">
             <p>
               We offer bespoke interior design solutions tailored to your
@@ -195,9 +195,9 @@ const AllCategorySection = () => {
           </div>
         </article>
 
-        <div className="flex flex-col gap-5 md:flex-row  md:justify-between px-8 mt-10 w-full justify-end">
-          <div className="w-[388px] pb-5 border border-[#D4D2E3] rounded-2xl">
-            <Picture className=" h-[338px]" src={img5} alt="img5" />
+        <div className="flex flex-col  gap-5 md:flex-row  md:justify-between px-8 mt-10 w-full justify-end">
+          <div className="m-auto w-[95%] md:w-[388px] pb-5 border border-[#D4D2E3] rounded-2xl">
+            <Picture className="w-full h-[338px]" src={img5} alt="img5" />
             <article className="w-[90%] m-auto mt-5">
               <p>
                 Discover our curated collection of Accessories designed to blend
@@ -208,7 +208,7 @@ const AllCategorySection = () => {
             </article>
           </div>
 
-          <div className="w-[388px] pb-5 border border-[#D4D2E3] rounded-2xl">
+          <div className=" m-auto w-[95%] md:w-[388px] pb-5 border border-[#D4D2E3] rounded-2xl">
             <Picture className=" h-[338px]" src={img4} alt="img4" />
             <article className="w-[90%] m-auto mt-5">
               <p>
@@ -220,7 +220,7 @@ const AllCategorySection = () => {
             </article>
           </div>
 
-          <div className="w-[388px] pb-5 border border-[#D4D2E3] rounded-2xl">
+          <div className="w-[95%] m-auto md:w-[388px] pb-5 border border-[#D4D2E3] rounded-2xl">
             <Picture className=" h-[338px]" src={img3} alt="img3" />
             <article className="w-[90%] m-auto mt-5">
               <p>
