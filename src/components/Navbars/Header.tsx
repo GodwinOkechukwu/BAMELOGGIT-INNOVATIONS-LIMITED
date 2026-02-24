@@ -110,16 +110,16 @@ const Header = () => {
     },
     {
       id: 2,
-      href: "/user/my-orders",
-      label: "About",
+      href: "/category",
+      label: "Shop",
     },
-    { id: 4, href: "", label: "Contact" },
+    { id: 4, href: "/contact-us", label: "Contact" },
   ];
   return (
     <>
-      <header className="flex flex-col w-full bg-[#fff] z-[100] px-3 fixed top-0 border-b border-white/5 shadow-2xl transition-all">
+      <header className="flex flex-col w-full bg-[#fff] z-[100] fixed top-0 border-b border-white/5 shadow-2xl transition-all">
         {/* Desktop Header */}
-        <div className="hidden slg:flex items-center justify-between w-full py-3 max-w-[1440px] mx-auto">
+        <div className="hidden slg:flex items-center justify-between w-full py-3 max-w-[1350px]  mx-auto">
           {/* <div className="md:flex w-[50%] bg-black justify-between hidden"> */}
           
         
@@ -163,7 +163,7 @@ const Header = () => {
             <Menu as="div" className="relative inline-block text-left">
               {({ open }) => (
                 <>
-                  <Menu.Button className="flex items-center gap-2 bg-[#111111] border border-white/10 px-3 py-2 rounded-xl cursor-pointer hover:bg-white/5 transition group outline-none">
+                  <Menu.Button className="flex items-center gap-2 bg-[#111111] border border-white/10 px-3 py-2 rounded-xl cursor-pointer hover:bg-gray/5 transition group outline-none">
                     {/* @ts-ignore */}
                     <Flag
                       code={baseCurrency?.countryCode || "NG"}
