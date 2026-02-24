@@ -106,10 +106,11 @@ const ProductCard2 = ({
 										e.preventDefault();
 										addToCart();
 									}}
-									className='flex items-center justify-center rounded-xl bg-primary-100 size-10 text-white hover:bg-slate-900 transition-all duration-300 active:scale-90 shadow-lg shadow-primary-100/20'
+									className='flex items-center justify-center rounded-xl bg-[#FD3D96] size-10 text-white hover:opacity-[0.8] transition-all duration-300 active:scale-90 shadow-lg shadow-primary-100/20'
 									aria-label='Add to cart'
 								>
 									<RiShoppingBagFill className='text-xl' />
+
 								</button>
 							) : (
 								<div className='flex items-center gap-2 sm:gap-3 rounded-xl bg-slate-50 p-1 border border-slate-200/60'>
@@ -130,7 +131,7 @@ const ProductCard2 = ({
 											e.preventDefault();
 											increase();
 										}}
-										className='size-7 sm:size-8 flex items-center justify-center rounded-lg bg-primary-100 text-white shadow-sm transition-all hover:opacity-90 active:scale-90'
+										className='size-7 sm:size-8 flex items-center justify-center rounded-lg bg-[#FD3D96] text-white shadow-sm transition-all hover:opacity-90 active:scale-90'
 									>
 										<AiOutlinePlus size={14} />
 									</button>
