@@ -139,6 +139,7 @@ const ProductCard2 = ({
 						</div>
 					)}
 				</div>
+
 			</div>
 
 			{/* Subtle border overlay for premium feel */}

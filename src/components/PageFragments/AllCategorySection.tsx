@@ -128,7 +128,7 @@ const AllCategorySection = () => {
   };
 
   return (
-    <>
+    <div className="max-w-[1350px] mx-auto ">
       {/* Hero Concept inspired by the image */}
       <div className="relative w-full overflow-hidden">
         <div className=" mt-[100px] md:mt-[200px] px-4 w-full space-y-6">
@@ -147,14 +147,14 @@ const AllCategorySection = () => {
               Get Started <FaArrowRight />
             </button>
           </article>
-          <div className="flex flex-col gap-5 md:flex-row mt-20 w-full">
+          <div className="flex flex-col gap-5 md:flex-row mt-20 max-w-[1350px] mx-auto">
             <Picture
-              className="md:h-[550px] relative md:w-[727px]"
+              className="md:h-[450px] relative md:w-[627px]"
               src={img2}
               alt="img1"
             />
             <Picture
-              className="md:h-[550px] md:w-[727px] relative md:bottom-[100px] md:right-[85px]"
+              className="md:h-[450px] md:w-[627px] relative md:bottom-[100px] md:right-[85px]"
               src={img1}
               alt="img2"
             />
@@ -162,8 +162,9 @@ const AllCategorySection = () => {
         </div>
       </div>
       {/* Category Section Styling Idea */}
-      <div className=" w-full mt-[100px]">
-        {/* {Categories?.slice(0, 5).map((cat) => {
+        <h2 className="md:text-3xl font-bold mt-10">Select Categories</h2>
+      <div className="grid grid-cols-2 lg:grid-cols-5 mt-10 max-w-[1350px] mx-auto gap-6 p-2 lg:p-0">
+        {Categories?.slice(0, 5).map((cat) => {
           const productImage: any = categoryProductsMap[cat?.id];
           return (
             <Link
@@ -184,58 +185,58 @@ const AllCategorySection = () => {
               </div>
             </Link>
           );
-        })} */}
-        <article className="text-center w-[60%] m-auto">
-          <h1 className="text-3xl md:text-5xl fomt-bold">Our Services </h1>
-          <div className="md:w-[60%] m-auto pt-7">
+        })}
+      </div>
+
+      <article className="text-center w-[60%] m-auto mt-10">
+        <h1 className="text-3xl md:text-5xl fomt-bold">Our Services </h1>
+        <div className="md:w-[60%] m-auto pt-7">
+          <p>
+            We offer bespoke interior design solutions tailored to your
+            needs,ensuring every space is both beautiful and functional.
+          </p>
+        </div>
+      </article>
+      <div className="grid md:grid-cols-3 gap-5 mt-10 max-w-[1350px] mx-auto ">
+        <div className="m-auto w-[95%] md:w-[388px] pb-5 border border-[#D4D2E3] rounded-2xl">
+          <Picture className="w-full h-[338px]" src={img5} alt="img5" />
+          <article className="w-[90%] m-auto mt-5">
             <p>
-              We offer bespoke interior design solutions tailored to your
-              needs,ensuring every space is both beautiful and functional.
+              Discover our curated collection of Accessories designed to blend
+              comfort with exquisite experience. Each piece is crafted with
+              meticulous attention to detail, ensuring both functionality and
+              aesthetic appeal in your space.
             </p>
-          </div>
-        </article>
+          </article>
+        </div>
 
-        <div className="grid md:grid-cols-3 gap-5 mt-10 w-full ">
-          <div className="m-auto w-[95%] md:w-[388px] pb-5 border border-[#D4D2E3] rounded-2xl">
-            <Picture className="w-full h-[338px]" src={img5} alt="img5" />
-            <article className="w-[90%] m-auto mt-5">
-              <p>
-                Discover our curated collection of Accessories designed to blend
-                comfort with exquisite experience. Each piece is crafted with
-                meticulous attention to detail, ensuring both functionality and
-                aesthetic appeal in your space.
-              </p>
-            </article>
-          </div>
+        <div className=" m-auto w-[95%] md:w-[388px] pb-5 border border-[#D4D2E3] rounded-2xl">
+          <Picture className=" h-[338px]" src={img4} alt="img4" />
+          <article className="w-[90%] m-auto mt-5">
+            <p>
+              Discover our curated collection of Accessories designed to blend
+              comfort with exquisite experience. Each piece is crafted with
+              meticulous attention to detail, ensuring both functionality and
+              aesthetic appeal in your space.
+            </p>
+          </article>
+        </div>
 
-          <div className=" m-auto w-[95%] md:w-[388px] pb-5 border border-[#D4D2E3] rounded-2xl">
-            <Picture className=" h-[338px]" src={img4} alt="img4" />
-            <article className="w-[90%] m-auto mt-5">
-              <p>
-                Discover our curated collection of Accessories designed to blend
-                comfort with exquisite experience. Each piece is crafted with
-                meticulous attention to detail, ensuring both functionality and
-                aesthetic appeal in your space.
-              </p>
-            </article>
-          </div>
-
-          <div className="w-[95%] m-auto md:w-[388px] pb-5 border border-[#D4D2E3] rounded-2xl">
-            <Picture className=" h-[338px]" src={img3} alt="img3" />
-            <article className="w-[90%] m-auto mt-5">
-              <p>
-                Discover our curated collection of Accessories designed to blend
-                comfort with exquisite experience. Each piece is crafted with
-                meticulous attention to detail, ensuring both functionality and
-                aesthetic appeal in your space.
-              </p>
-            </article>
-          </div>
+        <div className="w-[95%] m-auto md:w-[388px] pb-5 border border-[#D4D2E3] rounded-2xl">
+          <Picture className=" h-[338px]" src={img3} alt="img3" />
+          <article className="w-[90%] m-auto mt-5">
+            <p>
+              Discover our curated collection of Accessories designed to blend
+              comfort with exquisite experience. Each piece is crafted with
+              meticulous attention to detail, ensuring both functionality and
+              aesthetic appeal in your space.
+            </p>
+          </article>
         </div>
       </div>
 
       {/* </Carousel> */}
-    </>
+    </div>
   );
 };
 
