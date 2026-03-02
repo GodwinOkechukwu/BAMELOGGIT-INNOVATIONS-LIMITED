@@ -1,5 +1,5 @@
 "use client";
-import { logoImage } from "@public/images";
+// import { logoImage } from "@public/images";
 import Picture from "@src/components/picture/Picture";
 import Link from "next/link";
 
@@ -8,6 +8,7 @@ interface LogoImageProps {
 }
 
 import { Nunito, Pacifico } from "next/font/google";
+import logoImage from "../public/images/blLogo.png"
 
 const pacifico = Pacifico({
 	subsets: ["latin-ext"],
@@ -18,14 +19,14 @@ const pacifico = Pacifico({
 export const LogoImage = ({ className }: LogoImageProps) => {
 	return (
 		<Link href='/' className='flex items-end'>
-			{/* <Picture
+			<Picture
 				src={logoImage}
 				alt='logo'
 				priority
 				loading='lazy'
-				className={`w-[20px] lg:w-[30px] duration-300 hover:scale-105 transition-[.3] hover:animate-pulse ${className}`}
+				className={` duration-300 hover:scale-105 transition-[.3] hover:animate-pulse ${className}`}
 			/>
-			<h4 className={`text-base sm:text-lg font-medium ${pacifico.className}`}>
+			{/* <h4 className={`text-base sm:text-lg font-medium ${pacifico.className}`}>
 				Nestora
 			</h4> */}
 		</Link>

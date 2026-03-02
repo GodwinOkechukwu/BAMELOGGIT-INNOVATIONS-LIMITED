@@ -15,6 +15,7 @@ import { fetchExchangeRate } from "@utils/endpoints";
 import { setBaseCurrency, setExchangeRate } from "../Redux/Currency";
 import FormToast from "../Reusables/Toast/SigninToast";
 import useToken from "../hooks/useToken";
+import logo from "../../../public/images/blLogo.png";
 
 // Headless UI Components
 import { Menu, Transition } from "@headlessui/react";
@@ -121,10 +122,13 @@ const Header = () => {
         {/* Desktop Header */}
         <div className="hidden slg:flex items-center justify-between w-full py-3 max-w-[1350px]  mx-auto">
           {/* <div className="md:flex w-[50%] bg-black justify-between hidden"> */}
-          
-        
-          <ul className="md:flex justify-between w-[40%]  py-5 ">
-            <h1 className="text-2xl items-center mt-[-5px] font-bold">LOGO</h1>
+
+          <ul className="md:flex justify-between w-[40%] items-center  py-5 ">
+            <Picture
+              className="w-[60px] h-[60px] rounded-full border border-white/10 items-center"
+              src={logo}
+              alt="logo"
+            />
             {navLinks.map((l) => {
               return (
                 <li className="text-[#241E1E] list-none text-[16px]">
@@ -139,9 +143,9 @@ const Header = () => {
           </ul>
           {/* </div> */}
           {/* 1. Logo */}
-          <div className="col-span-2">
+          {/* <div className="col-span-2">
             <LogoImage className="!w-[35px] cursor-pointer brightness-200" />
-          </div>
+          </div> */}
 
           {/* 2. Search Bar */}
           <div className="col-span-6 flex justify-center w-[550px] px-12">
@@ -314,7 +318,7 @@ const Header = () => {
                 className="text-2xl text-black"
                 onClick={() => setDrawerVisible(true)}
               />
-              <LogoImage className="!w-[30px] brightness-200" />
+              <LogoImage className="!w-[30px] h-[30px] rounded-full brightness-200" />
             </div>
             <div onClick={onOpenCart} className="relative">
               <FiShoppingBag className="text-2xl text-black" />
